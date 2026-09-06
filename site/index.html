@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fuuz WMS Accelerator &mdash; Fuuz Accelerator</title>
+<meta name="description" content="Fuuz WMS Accelerator - warehouse management package">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://accelerators.fuuz.com/fuuz-wms-accelerator/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://accelerators.fuuz.com/fuuz-wms-accelerator/">
+<meta property="og:site_name" content="Fuuz Accelerators">
+<meta property="og:title" content="Fuuz WMS Accelerator &mdash; Fuuz Accelerator">
+<meta property="og:description" content="Fuuz WMS Accelerator - warehouse management package">
+<link rel="icon" href="assets/appicon-violet.svg">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="prose.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "name": "Fuuz WMS Accelerator",
+  "url": "https://accelerators.fuuz.com/fuuz-wms-accelerator/",
+  "description": "Fuuz WMS Accelerator - warehouse management package",
+  "codeRepository": "https://github.com/Fuuz-Platform/fuuz-wms-accelerator",
+  "applicationCategory": "BusinessApplication",
+  "runtimePlatform": "Fuuz",
+  "author": {
+    "@type": "Organization",
+    "name": "Fuuz",
+    "url": "https://fuuz.com"
+  }
+}
+</script>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="../"><img src="assets/logo-horizontal-on-midnight.svg" alt="Fuuz"></a>
+    <span class="section">Accelerators</span>
+    <nav><a href="#the-scenario">The Scenario</a><a href="#one-application-one-platform">One Application, One Platform</a><a href="#52-data-models">52 Data Models</a><a href="https://github.com/Fuuz-Platform/fuuz-wms-accelerator">GitHub</a></nav>
+  </div>
+</header>
+<main>
+<div class="wrap hero">
+  <p class="eyebrow">Accelerator &middot; Integration package</p>
+  <h1>Fuuz WMS <span class="accent">Accelerator</span></h1>
+  <p class="lede">Fuuz WMS Accelerator - warehouse management package</p>
+  <div class="ctas">
+    <a class="cta cta-primary" href="https://github.com/Fuuz-Platform/fuuz-wms-accelerator">Get the package</a>
+    <a class="cta cta-secondary" href="../">All accelerators</a>
+  </div>
+</div>
+<section>
+  <div class="wrap prose">
+<p>A packaged warehouse management application built on the <a href="https://fuuz.app">FUUZ</a> platform — receiving, inventory, cycle counting, picking, packing, and shipping in one importable Fuuz package.</p>
+<h2 id="the-scenario">The Scenario</h2>
+<p>A warehouse operation needs to run receiving through shipping against a single, status-driven data model — without stitching together point solutions or writing custom flows for every process. The WMS Accelerator packages the full order-to-cash warehouse cycle: receive inbound goods, manage tracked inventory, pick and pack against configurable methods, and ship with generated carrier documentation.</p>
+<h2 id="one-application-one-platform">One Application, One Platform</h2>
+<p><strong>Package:</strong> <code>WMS Accelerator - Mfg@0.0.7 1.fuuz</code></p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data Models</td>
+<td>52</td>
+</tr>
+<tr>
+<td>Screens</td>
+<td>43</td>
+</tr>
+<tr>
+<td>Data Flows</td>
+<td>49</td>
+</tr>
+<tr>
+<td>Document Designs</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Seeded Reference Data Sets</td>
+<td>17</td>
+</tr>
+</tbody>
+</table></div>
+<p>Built against <strong>platform version 2026.7.0</strong>.</p>
+<h2 id="52-data-models">52 Data Models</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Models</th>
+<th>What They Track</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Inventory &amp; Product Management</strong></td>
+<td>Adjustment, Area, HandlingUnit, HandlingUnitType, Inventory, InventoryPickStep, InventoryStatus, InventoryTrace, LabelDesign, Lot, Process, Product, ProductCategory, TransactionType</td>
+<td>The tracked unit of inventory — product, lot, quantity, and status — with a full audit trail of every move, merge, and split</td>
+</tr>
+<tr>
+<td><strong>Order &amp; Load Management</strong></td>
+<td>BusinessPartner, BusinessPartnerAddress, Load, Order, OrderLine, OrderLineRelease, OrderLineReleaseStatus, OrderStatus, OrderType, Pick, Shipment, ShipmentLine, ShipmentLineOrderLineRelease, ShipmentType</td>
+<td>Purchase/Sale Orders, their Order Line Releases, and the Loads and Shipments they generate</td>
+</tr>
+<tr>
+<td><strong>Picking</strong></td>
+<td>NonConformance, PickStatus, PickStep, PickStepStatus, Unpick, UnpickReason</td>
+<td>Picks broken into Pick Steps against specific storage locations, with exception/unpick handling</td>
+</tr>
+<tr>
+<td><strong>Receiving</strong></td>
+<td>Receipt, ReceiptException, ReceiptExceptionReason, ReceiptLine, ReceiptLineOrderLineRelease, ReceiptStatus</td>
+<td>Inbound BOL/ASN receipt headers and lines, with exception tracking</td>
+</tr>
+<tr>
+<td><strong>Cycle Counting</strong></td>
+<td>Count, CountLine, CountLineInventory, CountParameters, CountStatus</td>
+<td>Configurable cycle counts and the inventory lines they reconcile</td>
+</tr>
+<tr>
+<td><strong>Site Management</strong></td>
+<td>ProductPreferredStorageUnit, StorageUnit, StorageUnitStatus, StorageZone</td>
+<td>The Area / Zone / Storage Unit hierarchy that anchors every transaction</td>
+</tr>
+<tr>
+<td><strong>Shipping &amp; Carrier Management</strong></td>
+<td>StandardCarrierAlphaCode</td>
+<td>Seeded SCAC reference data for carrier assignment</td>
+</tr>
+<tr>
+<td><strong>Logistics</strong></td>
+<td>LoadStatus, OrderLineReleaseType</td>
+<td>Load lifecycle and release-type classification</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="43-screens">43 Screens</h2>
+<ul>
+<li><strong>8 Inventory &amp; Product Screens</strong> — Adjustment, Inventory, Merge/Move/Split Inventory, Process, Product Category, Product</li>
+<li><strong>7 Order &amp; Business Partner Screens</strong> — Allocate Inventory to Lines, Business Partner Address/Detail Forms, Business Partners Table, Order Line Create Widget, Select Order Releases, Shipping Mobile</li>
+<li><strong>6 Receiving Screens</strong> — Create Exception Modal, Create Receipt Line Widget, New Receipt Widget, Receipt Line Confirmation, Receiving, Receiving Details Modal</li>
+<li><strong>5 Cycle Counting Screens</strong> — Count Details, Count Location Selector, Count Selector, Count Table, Execute Cycle Count</li>
+<li><strong>4 Picking Screens</strong> — Execute Pick, Pick Details, Pick Management, Unpick Modal</li>
+<li><strong>3 Inventory Widget Screens</strong> — Basic Inventory Update Widget, Create Inventory Widget, Product Details Form</li>
+<li><strong>3 Order Processing Screens</strong> — Create Load Form, Load Management, Orders</li>
+<li><strong>2 Shipping Screens</strong> — SCAC, Ship Management</li>
+<li><strong>1 Packing Screen</strong>, <strong>1 Site Management Screen</strong>, <strong>1 Configuration Screen</strong>, <strong>1 WMS Dashboard</strong></li>
+<li><strong>1 Testing Screen</strong> — placeholder/test screen not intended for production use</li>
+</ul>
+<h2 id="49-data-flows">49 Data Flows</h2>
+<ul>
+<li><strong>Shipping &amp; Carrier Management</strong> — Add Edit SCAC Web Flow, Create Handling Unit Web Flow, Create Load and Shipments, Get BoL Number, Get Commercial Invoice Number, Print Shipping Documents Web Flow, Ship Management Web Flow, Update Load Status</li>
+<li><strong>Cycle Counting</strong> — Cancel/Complete/Recount Count, Count Count Line Inventory Webflow, Create Count Line Inventory, Cycle Count Web Flow, Exclude Count Line Inventory, Execute Cycle Count Scan, Start Count and Create Count Lines</li>
+<li><strong>Receiving</strong> — Confirm Line, Confirm Line Web, Confirm Receipt Line, Create Receipt Line, Update Receipt Status</li>
+<li><strong>Picking</strong> — Create Pick Step, Create Pick Web Flow, Execute Pick Web Flow, NonConformancePublishMessage, Pick Details Web Flow</li>
+<li><strong>Inventory &amp; Product Management</strong> — Create Inventory, Merge/Move/Split Inventory (+ Web variants)</li>
+<li><strong>Packing</strong> — Packing Web Flow, Pack Inventory, Print Box Content Label, Unpack Inventory</li>
+<li><strong>Order &amp; Load Management</strong> — Add New Shipment Line, Update Order Status, Update Release Status, Orders Web Flow, Change Shipment Line Quantity</li>
+<li><strong>Quality (Material Review Board)</strong> — MRB Adjust Inventory, MRB Complete Return</li>
+<li><strong>Configuration</strong> — Configuration Web Flow, Web Flow Log</li>
+<li><strong>Dashboard</strong> — WMS Dashboard Search v3</li>
+</ul>
+<h2 id="document-designs">Document Designs</h2>
+<p>Bill Of Lading, Box Content Label, Commercial Invoice, Packing List, Pick Sheet, Shipping Label.</p>
+<h2 id="seeded-reference-data">Seeded Reference Data</h2>
+<p>This package ships seeded values for <code>InventoryStatus</code>, <code>LoadStatus</code>, <code>HandlingUnitType</code>, <code>PickStepStatus</code>, <code>PickStatus</code>, <code>TransactionType</code>, <code>OrderLineReleaseStatus</code>, <code>OrderLineReleaseType</code>, <code>OrderStatus</code>, <code>OrderType</code>, <code>StandardCarrierAlphaCode</code>, <code>ShipmentType</code>, and <code>UnpickReason</code>, in addition to the standard <code>ApplicationConfiguration</code> set.</p>
+<h2 id="getting-started">Getting Started</h2>
+<h3>Import into FUUZ</h3>
+<ol>
+<li>Request a <a href="https://forms.zohopublic.com/mfgxonlinesaas/form/TrialNotificationForm/formperma/syUyoccvUH7Ef5DaReDpfM48vuKiZtaGfYN18JPPu9k">free trial of FUUZ</a></li>
+<li>Navigate to <strong>Fuuz Packages</strong></li>
+<li>Upload <code>WMS Accelerator - Mfg@0.0.7 1.fuuz</code></li>
+<li>Review the import preview and confirm</li>
+<li>Configure your site structure (Area → Zone → Storage Unit) and Business Partners, load Products, and set the tenant-wide Move/Pack/Pick behavior via Application Configuration</li>
+</ol>
+<h3>Explore the Package</h3>
+<p>Each <code>.fuuz</code> file is a gzipped tarball containing three JSON files:</p>
+<pre><code class="language-bash">mkdir extracted &amp;&amp; cd extracted
+tar -xzf &quot;../WMS Accelerator - Mfg@0.0.7 1.fuuz&quot;
+
+ls -lh
+# manifest.json      - Package metadata (name, version, dependencies)
+# definition.json    - Module groups, modules, and enum seed data
+# package-data.json  - Data models, screens, flows, and seed data
+</code></pre>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>A Fuuz Industrial Intelligence Platform tenant, platform version 2026.7.0 or later</li>
+<li>The Fuuz Integration Orchestrator, if you plan to connect to an external ERP/host system</li>
+</ul>
+<h2 id="resources">Resources</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Resource</th>
+<th>Link</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Free Trial</strong></td>
+<td><a href="https://forms.zohopublic.com/mfgxonlinesaas/form/TrialNotificationForm/formperma/syUyoccvUH7Ef5DaReDpfM48vuKiZtaGfYN18JPPu9k">fuuz.app</a></td>
+<td>Request your free trial of FUUZ</td>
+</tr>
+<tr>
+<td><strong>Get Started</strong></td>
+<td><a href="https://getstarted.fuuz.com">getstarted.fuuz.com</a></td>
+<td>Introductory videos and walkthroughs</td>
+</tr>
+<tr>
+<td><strong>FUUZ Academy</strong></td>
+<td><a href="https://academy.fuuz.com">academy.fuuz.com</a></td>
+<td>Online LMS with structured courses and certifications</td>
+</tr>
+<tr>
+<td><strong>Support &amp; Community</strong></td>
+<td><a href="https://support.fuuz.com">support.fuuz.com</a></td>
+<td>Knowledge base, documentation, and customer community</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="license">License</h2>
+<p>© Fuuz. All rights reserved. This package is proprietary software provided for use with the Fuuz Industrial Intelligence Platform. Redistribution or use outside of a licensed Fuuz tenant is not permitted without express written permission.</p>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <p>Fuuz&reg; is an Enterprise Industrial Intelligence Platform.
+      <a href="https://accelerators.fuuz.com/">All accelerators</a> &middot;
+      <a href="https://github.com/Fuuz-Platform/fuuz-wms-accelerator">Source</a> &middot;
+      <a href="https://fuuz.com">fuuz.com</a></p>
+  </div>
+</footer>
+</body>
+</html>
