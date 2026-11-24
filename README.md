@@ -1,5 +1,7 @@
 # Fuuz WMS Accelerator
 
+> **This repository is archived.** The same package (`WMS Accelerator - Mfg@0.0.7`) is now maintained in [Fuuz-Platform/fuuz-wms-modular-accelerator](https://github.com/Fuuz-Platform/fuuz-wms-modular-accelerator), which includes the installable `.fuuz` file plus the unpacked source, seed data and documentation. Please use that repository.
+
 A packaged warehouse management application built on the [FUUZ](https://fuuz.app) platform — receiving, inventory, cycle counting, picking, packing, and shipping in one importable Fuuz package.
 
 ## The Scenario
