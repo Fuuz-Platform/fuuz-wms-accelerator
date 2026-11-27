@@ -9,7 +9,7 @@
     ],
     "mainImage": {
       "file": "images/main.png",
-      "alt": "WMS — Warehouse Package: Fuuz title card"
+      "alt": "WMS — Warehouse Package: Fuuz cover"
     },
     "description": [
       "A packaged warehouse management application built on the FUUZ platform — receiving, inventory, cycle counting, picking, packing, and shipping in one importable Fuuz package.",
